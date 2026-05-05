@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO: Meta tags específicas para a página de contactos -->
+    <title>Contacto | Glauce Paim - Web Developer</title>
+    <meta name="description" content="Entre em contacto com Glauce Paim, Web Developer. Formulário de contacto, WhatsApp, email e redes sociais para colaborações e projetos.">
+    <meta name="keywords" content="contacto, formulário, web developer, colaboração, projeto, Glauce Paim">
+    <meta name="author" content="Glauce Paim">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Contacto | Glauce Paim">
+    <meta property="og:description" content="Vamos trabalhar juntos? Entre em contacto para o seu próximo projeto web.">
+    <meta property="og:type" content="website">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- CSS e Ícones -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script defer src="js/script.js"></script>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar spacing" aria-label="Menu principal">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <a href="index.html">Início</a> 
+                    <a href="about.html">Sobre</a>     
+                    <a href="services.html">Serviços</a>         
+                    <a href="contact.html" class="active">Contato</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        
+        <!-- Cabeçalho de Contacto -->
+        <header id="contact-header" class="main-header spacing">
+            <div class="container">
+                <div class="row">
+                    <div class="col-7 col-mobile-12 detail">
+                        <h1>Contacte-me</h1>
+                        <p>Acredito no poder do digital, e adoro colaborar com marcas que compartilham dessa visão.</p>
+                        <p>Vamos nos conectar.</p>
+                        <p class="list-icones">
+                            <a href="tel:+351912345678" aria-label="Ligar para +351 912 345 678">
+                                <i class="fas fa-phone" aria-hidden="true"></i>
+                            </a>
+                            <a href="mailto:glaucepaim@gmail.com" aria-label="Enviar email">
+                                <i class="fas fa-envelope" aria-hidden="true"></i>
+                            </a>
+                        </p>
+                    </div>
+                    <div class="col-5 col-mobile-12 thumb">
+                        <img src="assets/imagens/thumb-glau.png" 
+                             class="photo img-fluid" 
+                             alt="Foto de Glauce Paim para contacto profissional"
+                             width="300" height="300"
+                             loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Formulário de Contacto -->
+        <div id="contact-form-section" class="contacto form-section spacing">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Envie uma mensagem</h2>
+                        <p class="form-intro">Preencha o formulário abaixo e entrarei em contacto o mais breve possível.</p>
+                        
+                        <form id="contactForm" novalidate action="https://formspree.io/f/SEU_ID" method="POST">
+                            
+                            <div class="contact-form row">
+                                
+                                <!-- Coluna 1: Nome (6 colunas) -->
+                                <div class="form-column col-6"> 
+                                    <div class="form-group">
+                                        <label for="name">Nome completo</label>
+                                        <input 
+                                            type="text" 
+                                            id="name" 
+                                            name="name" 
+                                            required 
+                                            minlength="3"
+                                            maxlength="100"
+                                            placeholder="Ex: Maria Silva"                                            
+                                            autocomplete="name"
+                                        >
+                                        <span class="error-message" id="nameError"></span>
+                                    </div>                               
+                                </div>
+                                
+                                <!-- Coluna 2: Email + Telefone (6 colunas) -->
+                                <div class="form-column form-group-column col-6"> 
+                                    
+                                    <!-- Email -->
+                                    <div class="form-group form-email">
+                                        <label for="email">Email</label>
+                                        <input 
+                                            type="email" 
+                                            id="email" 
+                                            name="email" 
+                                            required
+                                            placeholder="Ex: exemplo@email.com"                                            
+                                            autocomplete="email"
+                                        >
+                                        <span class="error-message" id="emailError"></span>
+                                    </div>
+                                    
+                                    <!-- Telefone -->
+                                    <div class="form-group form-tel">
+                                        <label for="telefone">Telefone</label>
+                                        <input 
+                                            type="tel" 
+                                            id="telefone" 
+                                            name="telefone" 
+                                            required
+                                            pattern="^[+]?[0-9\s\-\.\(\)]{9,20}$"
+                                            placeholder="Ex: +351 912 345 678"                                            
+                                            title="Formato: +351 912 345 678 (9 a 20 caracteres)"
+                                            autocomplete="tel"
+                                        >
+                                        <span class="error-message" id="telefoneError"></span>
+                                    </div> 
+                                </div>
+                                
+                                <!-- Coluna 3: Mensagem (12 colunas) -->
+                                <div class="form-column col-12"> 
+                                    <div class="form-group">
+                                        <label for="message">Mensagem</label>
+                                        <textarea 
+                                            id="message" 
+                                            name="message" 
+                                            required 
+                                            minlength="10"
+                                            maxlength="1000"
+                                            rows="5"
+                                            placeholder="Descreva como posso ajudar..."                                           
+                                        ></textarea>
+                                        <span class="error-message" id="messageError"></span>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            
+                            <!-- Botão de Envio -->
+                            <button type="submit" class="cta btn-submit">
+                                <i class="fa fa-paper-plane" aria-hidden="true"></i> Enviar Mensagem
+                            </button>
+                            
+                            <!-- Mensagem de Sucesso -->
+                            <div id="successMessage" class="success-message" role="alert" hidden>
+                                ✅ Mensagem enviada com sucesso! Entrarei em contacto brevemente.
+                            </div>
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+
+    <!-- ========================================
+         RODAPÉ
+         ======================================== -->
+    <footer id="footer-main" class="footer spacing">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    
+                    <!-- Links sociais com acessibilidade -->
+                    <p>
+                        <a href="https://www.linkedin.com/in/glauce-paim/" 
+                           target="_blank" 
+                           rel="noopener noreferrer" 
+                           aria-label="Perfil profissional de Glauce Paim no LinkedIn">
+                            <i class="fab fa-linkedin" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://github.com/glaucepaim" 
+                           target="_blank" 
+                           rel="noopener noreferrer" 
+                           aria-label="Repositórios de código de Glauce Paim no GitHub">
+                            <i class="fab fa-github" aria-hidden="true"></i>
+                        </a>
+                        <a href="mailto:glaucepaim@gmail.com" 
+                           aria-label="Enviar email para Glauce Paim">
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                        </a>
+                    </p>
+                    
+                    <!-- Copyright -->
+                    <p>&copy; 2026 Glauce Paim. Todos os direitos reservados.</p>
+
+                    <p>
+                        <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                            <img style="border:0;width:88px;height:31px"
+                                src="https://jigsaw.w3.org/css-validator/images/vcss"
+                                alt="CSS válido!">
+                        </a>
+                        <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                            <img style="border:0;width:88px;height:31px"
+                                src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
+                                alt="CSS válido!">
+                        </a>
+                    </p>
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

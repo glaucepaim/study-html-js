@@ -1,0 +1,157 @@
+/* ========================================
+   FORMULÁRIO DE CONTACTO
+   Inputs brancos, labels acima, borda cinza
+   ======================================== */
+.contacto.form-section {
+    padding: 60px 0;
+}
+
+.contacto.form-section h2 {
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.form-intro {
+    text-align: center;
+    color: #666666;
+    margin-bottom: 2.5rem;
+    font-size: 1.1rem;
+}
+
+#contactForm {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid rgba(164, 125, 171, 0.2);
+    box-shadow: 0 4px 25px rgba(0,0,0,0.08);
+}
+
+/* Estrutura do formulário com grid */
+.contact-form {
+    margin-bottom: 2rem;
+}
+
+.form-column {
+    margin-bottom: 0;
+}
+
+.form-group-column {
+    display: flex;
+    gap: 20px;
+}
+
+/* Grupo de campo */
+.form-group {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Labels acima dos inputs */
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    color: #000000;
+    font-size: 1rem;
+}
+
+.form-group label::after {
+    content: " *";
+    color: #ff6b6b;
+    font-weight: 400;
+}
+
+/* Inputs e Textarea */
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+
+    background-color: #ffffff;
+    border: 2px solid #cccccc;
+    
+    color: #212226;
+    font-family: "Lato", sans-serif;
+    font-size: 1rem;
+    border-radius: 8px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #999999;
+    opacity: 1;
+}
+
+/* Estado de foco */
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #A47DAB;
+    box-shadow: 0 0 0 3px rgba(164, 125, 171, 0.2);
+}
+
+/* Textarea */
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+    line-height: 1.5;
+}
+
+/* Campos Email e Telefone lado a lado */
+.form-email,
+.form-tel {
+    width: 50%;
+}
+
+/* Mensagens de erro */
+.error-message {
+    display: block;
+    color: #ff6b6b;
+    font-size: 0.85rem;
+    margin-top: 0.4rem;
+    min-height: 1.2em;
+    font-weight: 500;
+}
+
+.form-group.error input,
+.form-group.error textarea {
+    border-color: #ff6b6b;
+    background-color: #fff5f5;
+}
+
+.form-group.error label {
+    color: #ff6b6b;
+}
+
+/* Mensagem de sucesso */
+.success-message {
+    background-color: rgba(37, 211, 102, 0.15);
+    color: #25D366;
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin-top: 1.5rem;
+    text-align: center;
+    font-weight: 600;
+    border: 1px solid #25D366;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Botão de submit do formulário */
+.btn-submit {
+    width: 100%;
+    max-width: 250px;
+    margin: 1.5rem auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
