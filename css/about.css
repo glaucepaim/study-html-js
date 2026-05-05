@@ -1,0 +1,168 @@
+/* ========================================
+   PÁGINA SOBRE - ESTILOS NOVOS
+   ======================================== */
+
+/* Section */
+.about-hero {
+    padding: 60px 0 40px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #EDF7FA 100%);
+}
+
+.about-hero .lead {
+    font-size: 1.2rem;
+    color: #333;
+    margin-top: 1rem;
+}
+
+.about-hero-img {
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(164, 125, 171, 0.25);
+    max-width: 280px;
+}
+
+/* Artigo & Aside */
+.about-article {
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+.about-article p {
+    margin-bottom: 1.2rem;
+}
+
+.about-aside {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid rgba(164, 125, 171, 0.2);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    height: fit-content;
+}
+
+.about-aside h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.about-aside .no-bullets li {
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.about-aside .cta {
+    width: 100%;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+/* Secção Missão/Visão/Valores */
+.bg-light {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+    margin: 0;
+}
+
+.mvv-card {
+    padding: 30px 20px;
+    text-align: center;
+    height: 100%;
+}
+
+.mvv-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.mvv-card h3 {
+    margin-top: 0;
+    margin-bottom: 0.8rem;
+}
+
+.mvv-card p {
+    margin-bottom: 0;
+    color: #555;
+}
+
+/* Secção Equipa */
+.team-card {
+    text-align: center;
+}
+
+.team-card figure {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    margin: 0;
+    transition: transform 0.3s ease;
+}
+
+.team-img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    border: 3px solid #A47DAB;
+}
+
+.team-card figcaption h3 {
+    margin-top: 0;
+    margin-bottom: 0.3rem;
+    font-size: 1.3rem;
+}
+
+.team-card .role {
+    display: block;
+    color: #A47DAB;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 0.8rem;
+}
+
+.team-card figcaption p {
+    margin-bottom: 0;
+    color: #444;
+    font-size: 0.95rem;
+}
+
+/* Utilitários de alinhamento vertical */
+.align-items-center {
+    align-items: center;
+}
+
+.mb-3 { margin-bottom: 3rem; }
+
+.team-img {
+    fill: #A47DAB !important;
+}
+
+/* Responsividade específica para a página Sobre */
+@media (max-width: 768px) {
+    .about-hero {
+        text-align: center;
+    }
+    
+    .about-hero-img {
+        margin: 2rem auto 0;
+    }
+    
+    .about-aside {
+        margin-top: 2rem;
+        order: 2;
+    }
+    
+    .mvv-card {
+        margin-bottom: 1.5rem;
+    }
+    
+    .team-card figure {
+        padding: 15px;
+    }
+    
+    .team-img {
+        width: 100px;
+        height: 100px;
+    }
+}
