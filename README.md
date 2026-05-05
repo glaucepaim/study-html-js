@@ -38,5 +38,5 @@ HTML5 • CSS3 • JavaScript • Google Fonts • Font Awesome
 
 ## 🚀 Executar localmente
 ```bash
-git clone https://github.com/glaucepaim/portfolio-pessoal.git
+git clone https://github.com/glaucepaim/study-html-js.git
 cd study-html-js
