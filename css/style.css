@@ -1,0 +1,822 @@
+/* ========================================
+   PORTFÓLIO PESSOAL - GLAUCE PAIM
+   CSS Grid 12 Colunas + SEO + Responsividade
+   ======================================== */
+
+/* ========================================
+   RESET E CONFIGURAÇÃO GLOBAL
+   ======================================== */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+body {
+    background-color: #ffffff;
+    color: #000000;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+/* ========================================
+   SISTEMA DE GRID - 12 COLUNAS
+   ======================================== */
+
+/* Container centralizado */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Row: flex wrapper para colunas */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px; /* Compensa padding das colunas */
+}
+
+/* Colunas base */
+[class*="col-"] {
+    padding: 0 10px;
+    width: 100%;
+    position: relative;
+    min-height: 1px;
+}
+
+/* Definição das 12 colunas (percentagens exatas) */
+.col-1  { width: 8.333333%; }
+.col-2  { width: 16.666667%; }
+.col-3  { width: 25%; }
+.col-4  { width: 33.333333%; }
+.col-5  { width: 41.666667%; }
+.col-6  { width: 50%; }
+.col-7  { width: 58.333333%; }
+.col-8  { width: 66.666667%; }
+.col-9  { width: 75%; }
+.col-10 { width: 83.333333%; }
+.col-11 { width: 91.666667%; }
+.col-12 { width: 100%; }
+
+/* Imagens responsivas */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.img-fixed-height  {
+    height: 235px;
+}
+/* ========================================
+   LINKS E TIPOGRAFIA
+   ======================================== */
+a {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    color: #000000;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #A47DAB;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 20px 0;
+    color: #000000;
+}
+
+h1 { font-size: 61px; }
+h2 { 
+    color: #A47DAB; 
+    font-size: 64px; 
+}
+h3 { 
+    color: #A47DAB; 
+    font-size: 40px; 
+}
+h4 { 
+    color: #A47DAB; 
+    font-size: 32px; 
+}
+
+/* ========================================
+   BOTÕES E CALL-TO-ACTION (.cta)
+   ======================================== */
+.cta {
+    background-color: #A47DAB;
+    color: #ffffff;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 15px 30px;
+    margin: 20px 0;
+    display: inline-block;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    border: 2px solid #A47DAB;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.cta:hover {
+    background-color: #ffffff;
+    color: #A47DAB;
+    border-color: #A47DAB;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(164, 125, 171, 0.3);
+}
+
+.cta:active {
+    transform: translateY(0);
+}
+
+/* Variante secundária */
+.cta-1 {
+    background-color: transparent;
+    color: #A47DAB;
+    border: 2px solid #A47DAB;
+    border-radius: 10px;
+    padding: 15px 30px;
+    margin: 20px 0;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    transition: all 0.3s ease;
+}
+
+.cta-1:hover {
+    background-color: #A47DAB;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+/* ========================================
+   ESPAÇAMENTO E UTILITÁRIOS
+   ======================================== */
+.spacing {
+    padding-left: 148px;
+    padding-right: 148px;
+}
+
+.mt-1 { margin-top: 1rem; }
+.mt-2 { margin-top: 2rem; }
+.mt-3 { margin-top: 3rem; }
+.mb-1 { margin-bottom: 1rem; }
+.mb-2 { margin-bottom: 2rem; }
+.mb-3 { margin-bottom: 3rem; }
+
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+/* ========================================
+   NAVBAR
+   ======================================== */
+.navbar {
+    background-color: #ffffff;
+    padding: 15px 0;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .row {
+    justify-content: center;
+}
+
+.navbar a {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #000000;
+    padding: 14px 16px;
+    margin: 0 5px;
+    transition: all 0.3s ease;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #A47DAB;
+    background-color: rgba(164, 125, 171, 0.1);
+    border-radius: 4px;
+}
+
+/* ========================================
+   CABEÇALHO PRINCIPAL
+   ======================================== */
+.main-header {
+    padding: 60px 0 40px;
+}
+
+.main-header .row {
+    align-items: center;
+}
+
+.main-header .detail {
+    padding-right: 30px;
+}
+
+.main-header .detail h1 {
+    margin-bottom: 1rem;
+    line-height: 1.1;
+}
+
+.main-header .detail p {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.exp-prof-span {
+    font-size: 40px;
+    color: #A47DAB;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+}
+
+.main-header .thumb {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.photo {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 50%;
+    border: 4px solid #A47DAB;
+    box-shadow: 0 8px 25px rgba(164, 125, 171, 0.2);
+    object-fit: cover;
+}
+
+/* Ícones de contacto no header */
+.list-icones {
+    margin-top: 1.5rem;
+}
+
+.list-icones a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: rgba(164, 125, 171, 0.1);
+    color: #A47DAB;
+    font-size: 1.2rem;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+}
+
+.list-icones a:hover {
+    background-color: #A47DAB;
+    color: #ffffff;
+    transform: translateY(-3px);
+}
+
+/* ========================================
+   SECÇÃO SKILLS & PROJETOS
+   ======================================== */
+.skills-projects {
+    background-color: #EDF7FA;
+    padding: 60px 0;
+    justify-content:space-between;
+}
+
+.skills-projects .row {
+    align-items: stretch;
+}
+
+/* Minhas Skills */
+.my-skills {
+    padding: 30px;
+}
+
+.my-skills h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Lista de skills sem bullets */
+.no-bullets {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.no-bullets li {
+    margin-bottom: 12px;
+    padding-left: 25px;
+    position: relative;
+    font-weight: 500;
+}
+
+.no-bullets li::before {
+    content: "▹";
+    color: #A47DAB;
+    position: absolute;
+    left: 0;
+    font-weight: 700;
+    font-size: 1.1em;
+}
+
+/* Meus Projetos */
+.my-projects {
+    padding: 30px;
+}
+
+.my-projects h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Lista ordenada customizada */
+.custom-list {
+    list-style: none;
+    counter-reset: project-counter;
+    padding-left: 0;
+}
+
+.custom-list li {
+    counter-increment: project-counter;
+    position: relative;
+    padding-left: 50px;
+    margin-bottom: 18px;
+    line-height: 1.4;
+}
+
+.custom-list li::before {
+    content: counter(project-counter);
+    background-color: #A47DAB;
+    color: #ffffff;
+    border-radius: 50%;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ========================================
+   SECÇÃO SERVIÇOS / TRABALHOS
+   ======================================== */
+.services {
+    padding: 60px 0;
+}
+
+.services > .container > .row:first-child {
+    margin-bottom: 40px;
+}
+
+.services .work {
+    display: flex;
+    align-items: flex-start;
+    padding: 25px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    gap: 30px;
+}
+
+.services .work:last-child {
+    border-bottom: none;
+}
+
+.services .work .thumb {
+    flex-shrink: 0;
+    width: 373px;
+    max-width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.services .work .thumb img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.services .work .thumb:hover img {
+    transform: scale(1.03);
+}
+
+.services .work .detail {
+    flex: 1;
+}
+
+.services .work .detail h4 {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.services .work .detail p {
+    margin-bottom: 0;
+    color: #333333;
+}
+
+/* ========================================
+   RODAPÉ
+   ======================================== */
+.footer {
+    background-color: #f8f9fa;
+    padding: 40px 0 30px;
+    margin-top: 40px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+.footer .row {
+    justify-content: center;
+    text-align: center;
+}
+
+.footer p {
+    margin: 10px 0;
+    color: #212226;
+    font-size: 0.95rem;
+}
+
+.footer a {
+    color: #A47DAB;
+    margin: 0 12px;
+    font-size: 1.3rem;
+    transition: all 0.3s ease;
+}
+
+.footer a:hover {
+    color: #000000;
+    transform: translateY(-2px);
+}
+
+/* Ícones Font Awesome */
+.fab, .fas, .fa {
+    color: #A47DAB;
+    transition: color 0.3s ease;
+}
+
+/* ========================================
+   MEDIA QUERIES - RESPONSIVIDADE
+   ======================================== */
+
+/* Tablet: até 1024px */
+@media (max-width: 1024px) {
+    .container {
+        max-width: 960px;
+    }
+    
+    .spacing {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    
+    /* Tipografia ajustada */
+    h1 { font-size: 56px; }
+    h2 { font-size: 48px; }
+    h3 { font-size: 36px; }
+    h4 { font-size: 28px; }
+    
+    /* Navbar */
+    .navbar a {
+        font-size: 14px;
+        padding: 12px 10px;
+        margin: 0 3px;
+    }
+    
+    /* Header */
+    .main-header .detail {
+        padding-right: 20px;
+    }
+    
+    .main-header .detail h1 {
+        font-size: 2.5rem;
+    }
+    
+    .exp-prof-span {
+        font-size: 2.5rem;
+    }
+    
+    /* Serviços */
+    .services .work .thumb {
+        width: 300px;
+    }
+    
+    /* Formulário */
+    .form-email,
+    .form-tel {
+        width: 50%;
+    }
+    
+    #contactForm {
+        padding: 30px;
+    }
+}
+
+/* Mobile: até 768px */
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+    
+    .spacing {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    /* Colunas ocupam 100% em mobile */
+    [class*="col-"] {
+        width: 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    
+    /* Tipografia mobile */
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.8rem; }
+    h3 { font-size: 1.5rem; }
+    h4 { font-size: 1.3rem; }
+    
+    body {
+        font-size: 16px;
+    }
+    
+    /* Navbar centralizada */
+    .navbar {
+        padding: 10px 0;
+    }
+    
+    .navbar .row {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .navbar a {
+        font-size: 14px;
+        padding: 8px 10px;
+        margin: 2px 3px;
+        display: inline-block;
+    }
+    
+    /* Dropdown em mobile */
+    .dropdown-content {
+        position: static;
+        box-shadow: none;
+        background-color: transparent;
+        padding: 0;
+    }
+    
+    .dropdown-content a {
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+    
+    /* Cabeçalho: imagem acima do texto */
+    .main-header {
+        padding: 40px 0 30px;
+        text-align: center;
+    }
+    
+    .main-header .row {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    
+    .main-header .detail {
+        margin-top: 1.5rem;
+    }
+    
+    .main-header .thumb {
+        justify-content: center;
+    }
+    
+    .photo {
+        max-width: 200px;
+        border-width: 3px;
+    }
+    
+    .exp-prof-span {
+        font-size: 1.8rem;
+    }
+    
+    .list-icones {
+        justify-content: center;
+        display: flex;
+        margin-top: 1rem;
+    }
+    
+    .list-icones a {
+        margin: 0 8px;
+    }
+    
+    /* Skills & Projetos: empilhados */
+    .skills-projects {
+        padding: 40px 0;
+    }
+    
+    .my-skills,
+    .my-projects {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    
+    .my-skills:last-child,
+    .my-projects:last-child {
+        margin-bottom: 0;
+    }
+    
+    .my-skills h3,
+    .my-projects h3 {
+        text-align: center;
+    }
+    
+    .no-bullets,
+    .custom-list {
+        text-align: left;
+    }
+    
+    /* Serviços: cards empilhados */
+    .services .work {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 30px 0;
+    }
+    
+    .services .work .thumb {
+        width: 100%;
+        max-width: 300px;
+        margin: auto;
+    }
+    
+    .services .work .detail {
+        text-align: center;
+        padding-top: 1.5rem;
+    }
+    
+    .mr48 {
+        margin-right: 0 !important;
+    }
+    
+    /* Formulário: campos em coluna única */
+    .form-group-column {
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .form-email,
+    .form-tel {
+        width: 100%;
+    }
+    
+    #contactForm {
+        padding: 25px 20px;
+    }
+    
+    .form-group input,
+    .form-group textarea {
+        font-size: 1rem;
+        padding: 10px 12px;
+    }
+    
+    .btn-submit {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    /* Footer */
+    .footer {
+        padding: 30px 0 20px;
+        text-align: center;
+    }
+    
+    .footer a {
+        margin: 0 15px;
+        font-size: 1.5rem;
+    }
+    
+    /* Botões CTA em largura total */
+    .cta, .cta-1 {
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    /* Utilitários mobile */
+    .text-center-mobile {
+        text-align: center;
+    }
+    
+    .hide-mobile {
+        display: none;
+    }
+    
+    .show-mobile {
+        display: block;
+    }
+}
+
+/* Mobile extra pequeno: até 480px */
+@media (max-width: 480px) {
+    h1 { font-size: 1.8rem; }
+    h2 { font-size: 1.5rem; }
+    
+    .photo {
+        max-width: 160px;
+    }
+    
+    .navbar a {
+        font-size: 13px;
+        padding: 6px 8px;
+    }
+    
+    #contactForm {
+        padding: 20px 15px;
+    }
+}
+
+/* ========================================
+   ACESSIBILIDADE E PREFERÊNCIAS
+   ======================================== */
+
+/* Foco visível para navegação por teclado */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+    outline: 2px solid #A47DAB;
+    outline-offset: 2px;
+}
+
+/* Reduz animações para quem prefere */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* Alto contraste */
+@media (prefers-contrast: more) {
+    a {
+        text-decoration: underline;
+    }
+    
+    .cta {
+        border-width: 3px;
+    }
+}
+
+/* ========================================
+   UTILITÁRIOS DE GRID RESPONSIVO
+   ======================================== */
+
+/* Classes helper para responsividade manual */
+@media (min-width: 769px) {
+    .col-mobile-12 {
+        width: auto;
+        flex: 0 0 auto;
+        max-width: none;
+    }
+}
+
+/* Ordem visual para mobile (ex: imagem antes do texto) */
+@media (max-width: 768px) {
+    .order-mobile-first {
+        order: -1;
+    }
+}

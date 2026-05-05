@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <!-- Meta charset obrigatório -->
+    <meta charset="UTF-8">
+    
+    <!-- SEO: Viewport para responsividade -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO: Meta tags essenciais -->
+    <title>Glauce Paim | Web Developer - Portfólio Profissional</title>
+    <meta name="description" content="Portfólio de Glauce Paim, Web Developer especializada em HTML, CSS, JavaScript e Responsive Design. Projetos de e-commerce, dashboards e sites responsivos.">
+    <meta name="keywords" content="web developer, portfólio, HTML, CSS, JavaScript, responsive design, e-commerce, dashboard, frontend, Glauce Paim">
+    <meta name="author" content="Glauce Paim">
+    <meta name="robots" content="index, follow">
+    
+    <!-- SEO: Open Graph para redes sociais -->
+    <meta property="og:title" content="Glauce Paim | Web Developer">
+    <meta property="og:description" content="Portfólio profissional com projetos de desenvolvimento web responsivo.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://glaucepaim.dev">
+    <meta property="og:image" content="https://glaucepaim.dev/assets/imagens/thumb-glau.png">
+    
+    <!-- SEO: Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Glauce Paim | Web Developer">
+    <meta name="twitter:description" content="Portfólio profissional com projetos de desenvolvimento web responsivo.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- CSS Principal -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" crossorigin="anonymous"> 
+  
+    <!-- Schema.org structured data (SEO avançado) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Glauce Paim",
+        "jobTitle": "Web Developer",
+        "url": "https://glaucepaim.dev",
+        "image": "https://glaucepaim.dev/assets/imagens/thumb-glau.png",
+        "sameAs": [
+            "https://www.linkedin.com/in/glauce-paim/",
+            "https://github.com/glaucepaim"
+        ]
+    }
+    </script>
+</head>
+<body>
+
+    <!-- Navbar de Navegação -->
+    <nav class="navbar" aria-label="Menu principal">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <a href="#home" class="active">Início</a> 
+                    <a href="about.html">Sobre</a>       
+                    <a href="services.html">Serviços</a>       
+                    <a href="contact.html">Contato</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        
+        <!-- ========================================
+             CABEÇALHO
+             ======================================== -->
+        <header id="home" class="main-header spacing">
+            <div class="container">
+                <div class="row">
+                    
+                    <!-- Texto: 7 colunas desktop, 12 mobile -->
+                    <div class="col-7 detail">
+                        <h1>Olá, Eu sou a Glauce Paim e sou Web Developer</h1>
+                        <p><span class="exp-prof-span">+2</span> anos de experiência em desenvolvimento web</p>
+                        <p>Foco em criar experiências digitais modernas e acessíveis.</p>
+                        <a href="contact.html" class="cta">Vamos Trabalhar Juntos</a>
+                    </div>
+                    
+                    <!-- Imagem: 5 colunas desktop, 12 mobile -->
+                    <div class="col-5 col-mobile-12 thumb">
+                        <img src="assets/imagens/thumb-glau.png" 
+                             class="photo img-fluid" 
+                             alt="Foto de perfil de Glauce Paim, Web Developer especializada em desenvolvimento front-end"
+                             width="300" 
+                             height="300"
+                             loading="lazy">
+                    </div>
+                    
+                </div>
+            </div>
+        </header>
+
+        <!-- ========================================
+             SECÇÃO SKILLS & PROJETOS
+             ======================================== -->
+        <div id="projects" class="skills-projects spacing">
+            <div class="container">
+                <div class="row skills-projects spacing">
+                    
+                    <!-- Minhas Skills: 6 colunas desktop, 12 mobile -->
+                    <section class="my-skills col-6 col-mobile-12">
+                        <h2>Minhas Skills</h2>
+                        <ul class="no-bullets">
+                            <li>HTML5 & CSS3</li>
+                            <li>JavaScript</li>
+                            <li>Responsive Design</li>
+                            <li>Git & GitHub</li>
+                        </ul>
+                    </section>
+
+                    <!-- Meus Projetos: 6 colunas desktop, 12 mobile -->
+                    <section class="my-projects col-6 col-mobile-12">
+                        <h2>Meus Projetos</h2>
+                        <ol class="custom-list">
+                            <li>Portfólio Pessoal - Site responsivo com CSS Grid</li>
+                            <li>Loja Online - E-commerce com carrinho de compras</li>
+                            <li>App de Tarefas - Aplicação com localStorage</li>
+                        </ol>
+                    </section>
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- ========================================
+             SECÇÃO SERVIÇOS / TRABALHOS EM DESTAQUE
+             ======================================== -->
+        <div id="services" class="services spacing">
+            <div class="container">
+                
+                <!-- Título da secção -->
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Trabalhos em destaque</h2>
+                    </div>
+                </div>
+                
+                <!-- Item 1: Dashboard -->
+                <article class="work">
+                    <div class="row">
+                        <div class="col-4 col-mobile-12">
+                            <img src="assets/imagens/thumb-01.png" 
+                                 class="thumb img-fluid" 
+                                 alt="Dashboard administrativo com gráficos de vendas, métricas em tempo real e painel de gestão de e-commerce"
+                                 width="373" 
+                                 height="250"
+                                 loading="lazy">
+                        </div>
+                        <div class="col-8 col-mobile-12 detail">
+                            <h3>Dashboard</h3>
+                            <p>Plataforma completa de e-commerce com dashboard administrativo responsivo, permitindo gestão de produtos, encomendas e analytics em tempo real, otimizada para todos os dispositivos.</p>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Item 2: Responsive Design -->
+                <article class="work">
+                    <div class="row">
+                        <div class="col-4 col-mobile-12">
+                            <img src="assets/imagens/thumb-03.png" 
+                                 class="thumb img-fluid" 
+                                 alt="Exemplo de layout responsivo adaptado para mobile, tablet e desktop demonstrando flexibilidade de design"
+                                 width="373" 
+                                 height="250"
+                                 loading="lazy">
+                        </div>
+                        <div class="col-8 col-mobile-12 detail">
+                            <h3>Responsive Design</h3>
+                            <p>Desenvolvimento de interfaces adaptativas com abordagem mobile-first, utilizando CSS Grid, Flexbox e Media Queries para garantir experiência consistente e performática em smartphones, tablets e desktops.</p>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Item 3: E-commerce -->
+                <article class="work">
+                    <div class="row">
+                        <div class="col-4 col-mobile-12">
+                            <img src="assets/imagens/thumb-02.png" 
+                                 class="thumb img-fluid" 
+                                 alt="Loja virtual e-commerce com catálogo de produtos, carrinho de compras e checkout seguro"
+                                 width="373" 
+                                 height="250"
+                                 loading="lazy">
+                        </div>
+                        <div class="col-8 col-mobile-12 detail">
+                            <h3>E-commerce</h3>
+                            <p>Loja virtual completa com catálogo dinâmico, carrinho de compras, checkout seguro e área de cliente. Foco em conversão, usabilidade e integração com métodos de pagamento e gestão de inventário.</p>
+                        </div>
+                    </div>
+                </article>
+                
+            </div>
+        </div>
+        
+    </main>
+
+    <!-- ========================================
+         RODAPÉ
+         ======================================== -->
+    <footer id="footer-main" class="footer spacing">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    
+                    <!-- Links sociais com acessibilidade -->
+                    <p>
+                        <a href="https://www.linkedin.com/in/glauce-paim/" 
+                           target="_blank" 
+                           rel="noopener noreferrer" 
+                           aria-label="Perfil profissional de Glauce Paim no LinkedIn">
+                            <i class="fab fa-linkedin" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://github.com/glaucepaim" 
+                           target="_blank" 
+                           rel="noopener noreferrer" 
+                           aria-label="Repositórios de código de Glauce Paim no GitHub">
+                            <i class="fab fa-github" aria-hidden="true"></i>
+                        </a>
+                        <a href="mailto:glaucepaim@gmail.com" 
+                           aria-label="Enviar email para Glauce Paim">
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                        </a>
+                    </p>
+                    
+                    <!-- Copyright -->
+                    <p>&copy; 2026 Glauce Paim. Todos os direitos reservados.</p>
+
+                    <p>
+                        <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                            <img style="border:0;width:88px;height:31px"
+                                src="https://jigsaw.w3.org/css-validator/images/vcss"
+                                alt="CSS válido!">
+                        </a>
+                        <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                            <img style="border:0;width:88px;height:31px"
+                                src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
+                                alt="CSS válido!">
+                        </a>
+                    </p>
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
