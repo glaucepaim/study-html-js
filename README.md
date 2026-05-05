@@ -31,7 +31,6 @@ Projeto desenvolvido para demonstrar domínio dos fundamentos do desenvolvimento
 - Design responsivo e acessível
 - SEO otimizado
 - Formulário com validação
-- Galeria interativa
 - Código validado W3C
 
 ## 🛠️ Stack
